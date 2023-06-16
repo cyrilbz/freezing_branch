@@ -69,7 +69,7 @@ for i=1:nt
     % Compute osmotic and ice pressure
         posm_pv(i,:) = (Cs_p(i,:)'-Cs_v(i,:)')*p.Rg.*Temp_nv' ;
         posm_p(i,:) = Cs_p(i,:)'*p.Rg.*Temp_nv' ;
-        pice_v(i,:) = p.rhow*(p.Ew-p.Ei).*log(Temp_nv./Tm_nv).*fv ;
+        pice_v(i,:) = p.rhow*(p.Ew-p.Ei).*log(Temp_nv./p.Tc).*fv ;
         posm_v(i,:) = Cs_v(i,:)'*p.Rg.*Temp_nv' ;
         posm_b(i) = Cs_bark(i)*p.Rg*Text ;
     
