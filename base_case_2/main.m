@@ -1,21 +1,23 @@
+% % This file is part of "Freezing Branch", a code that simulates 
+% % freeze induced cell dehydration, pressure and diameter changes 
+% % in a tree stem.
+% % 
+% % Author: Cyril Bozonnet (cyril.bozonnet@inrae.fr; github: cyrilbz) 
+% %         INRAE, PIAF, Clermont-Ferrand
+% %         
+% %         The code structure has been inspired from an existing code 
+% %         written by Isabell Graf (Konrad) and John M. Stockie
+% %         Department of Mathematics
+% %         Simon Fraser University
+% %          
+% % Developped using Matlab version R2018a.
+% % 
+% % The code is distributed under the CeCILL-B free software 
+% % license agreement.
+% % (https://cecill.info/licences/Licence_CeCILL-B_V1-en.html)
+
 clear all
 close all
-
-% % % This is the main program of a model developped to study winter 
-% % % stem pressure and diameter variations during freeze-thaw cycles. 
-% % % 
-% % % The main.m program computes initial values, launches the temporal 
-% % % integration with given ode15s solver options and saves data at 
-% % % regular time intervals. This is the program to be launched to run the model.
-% % % 
-% % % The parameters.m program gather all parameters and useful 
-% % % functions used to run the model
-% % % 
-% % % The dyfun.m program contains all physical equations and 
-% % % computes the vector of unknow to be solved.
-% % % 
-% % % The post_process.m program is used to recompute different 
-% % % state variables not saved during the main integration and exploit the results.
 
 %% MAIN CODE
 main_start = tic ; % main timer start
