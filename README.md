@@ -6,6 +6,20 @@ The main directory contains different sub-directories that correspond to differe
 Each sub-directory contains three .m files: main.m, parameters.m and dyfun.m (see explanation below), as well as data in .mat format (e.g., pressure and temperature fields, ...) produced by the simulations. \
 The main directory contains experimental data, and two .m files : comparison.m and post_process.m.
 
+Author: Cyril Bozonnet (cyril.bozonnet@inrae.fr; github: cyrilbz) 
+         INRAE, PIAF, Clermont-Ferrand
+        
+      The code structure has been inspired from an existing code 
+      written by Isabell Graf (Konrad) and John M. Stockie
+      Department of Mathematics
+      Simon Fraser University
+         
+Developped using Matlab version R2018a.
+
+The code is distributed under the CeCILL-B free software 
+icense agreement.
+(https://cecill.info/licences/Licence_CeCILL-B_V1-en.html)
+
 # Code (short) description
 
 ## parameters.m:
