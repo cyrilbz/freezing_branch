@@ -7,12 +7,12 @@ Each sub-directory contains three .m files: main.m, parameters.m and dyfun.m (se
 The main directory contains experimental data, and two .m files : comparison.m and post_process.m.
 
 Author: Cyril Bozonnet (cyril.bozonnet@inrae.fr; github: cyrilbz) 
-         INRAE, PIAF, Clermont-Ferrand
+INRAE, PIAF, Clermont-Ferrand
         
-      The code structure has been inspired from an existing code 
-      written by Isabell Graf (Konrad) and John M. Stockie
-      Department of Mathematics
-      Simon Fraser University
+The code structure has been inspired from an existing code 
+written by Isabell Graf (Konrad) and John M. Stockie
+Department of Mathematics
+Simon Fraser University
          
 Developped using Matlab version R2018a.
 
