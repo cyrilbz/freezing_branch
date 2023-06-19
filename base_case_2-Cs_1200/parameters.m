@@ -1,5 +1,20 @@
-
-%% test code for enthalpy method using Matlab, finite difference discretization and ode15s
+% % This file is part of "Freezing Branch", a code that simulates 
+% % freeze induced cell dehydration, pressure and diameter changes 
+% % in a tree stem.
+% % 
+% % Author: Cyril Bozonnet (cyril.bozonnet@inrae.fr; github: cyrilbz) 
+% %         INRAE, PIAF, Clermont-Ferrand
+% %         
+% %         The code structure has been inspired from an existing code 
+% %         written by Isabell Graf (Konrad) and John M. Stockie
+% %         Department of Mathematics
+% %         Simon Fraser University
+% %          
+% % Developped using Matlab version R2018a.
+% % 
+% % The code is distributed under the CeCILL-B free software 
+% % license agreement.
+% % (https://cecill.info/licences/Licence_CeCILL-B_V1-en.html)
 
 function p = parameters(p) % all parameters are wrapped in a function to pass them to ode15s easily
 %% Base case parameters
@@ -64,7 +79,7 @@ p.Nf = 16 ; % Number of fibers connected to a vessel
 p.rcap = 7.8e-7 ; % radius of pores in fibre-vessel wall [m]
 ffv = 0.88 ; % fraction of vessel wall covered by fiber-vessel pits
 p.W = 3.64e-6 ; % Fiber-vessel wall thickness [m]
-p.muw = 1.6e-3 ; % Water dynamic viscosity at 2°C [Pa.s]
+p.muw = 1.6e-3 ; % Water dynamic viscosity at 2Â°C [Pa.s]
 kfv = 3.63e-21 ; % Fiber-vessel wall porosity [m2] (Petty et al 1983, JExpBot)
 p.WC = 0 ; %kfv/muw/W ; % Conductivity of fibre-vessel wall [m/s/Pa] 
 p.Afv = ffv*2*pi*p.Rv*p.Lv ; % area of fibre vessel-wall [m2]
@@ -149,7 +164,7 @@ p.Tempout = @(t) Tempfun1( t, p.Tmean, p.Tinit, p.Toutmax, p.Toutmin, p.Rc); % t
 
 %% Finite difference discretization
 
-% Build d²/dr² operator using second order centered scheme
+% Build dÂ²/drÂ² operator using second order centered scheme
 p.A = - diag(2/(p.dr^2)*ones(p.nc,1)) + diag(1/(p.dr^2)*ones(p.nc-1,1), 1) ...
     + diag(1/(p.dr^2)*ones(p.nc-1,1), -1) ; 
 p.A(1,1) = -1/(p.dr^2) ; % Neumann BC on left point (hypothesis : Heartwood is not conductive)
