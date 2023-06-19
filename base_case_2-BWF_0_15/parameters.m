@@ -2,7 +2,7 @@
 % % freeze induced cell dehydration, pressure and diameter changes 
 % % in a tree stem.
 % % 
-% % Author: Cyril Bozonnet (cyril.bozonnet@inrae.fr) 
+% % Author: Cyril Bozonnet (cyril.bozonnet@inrae.fr; github: cyrilbz) 
 % %         INRAE, PIAF, Clermont-Ferrand
 % %         
 % %         The code structure has been inspired from an existing code 
