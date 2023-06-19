@@ -28,5 +28,5 @@ It is used to compare different model results (contained in different folders). 
 # Recommandations for users and developpers
 
 - When modifying a state equation in dyfun.m, one must also copy the modification in post_process.m for consistency
-- If one lowers the solver tolerance in main.m, it might lead to convergence issues.
+- If one increases the solver tolerance in main.m, it might lead to convergence issues.
 - Always create a new sub-directory for each new simulation: the .mat data files are overwritten at each run. The path between the post_process.m and comparison files with the sub-directories can be changed (no need to keep the same architecture as long as the main.m, parameters.m and dyfun.m files are in the same directory).
