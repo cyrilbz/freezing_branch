@@ -1,3 +1,21 @@
+% % This file is part of "Freezing Branch", a code that simulates 
+% % freeze induced cell dehydration, pressure and diameter changes 
+% % in a tree stem.
+% % 
+% % Author: Cyril Bozonnet (cyril.bozonnet@inrae.fr; github: cyrilbz) 
+% %         INRAE, PIAF, Clermont-Ferrand
+% %         
+% %         The code structure has been inspired from an existing code 
+% %         written by Isabell Graf (Konrad) and John M. Stockie
+% %         Department of Mathematics
+% %         Simon Fraser University
+% %          
+% % Developped using Matlab version R2018a.
+% % 
+% % The code is distributed under the CeCILL-B free software 
+% % license agreement.
+% % (https://cecill.info/licences/Licence_CeCILL-B_V1-en.html)
+
 clear all 
 close all
 
@@ -63,7 +81,7 @@ for i=1:length(dir_names)
     %% diameter comparison
     set (gcf,'color','white')
     buff = D(i).D ;
-    buff = (buff - buff(1))*10^6 ; % diameter variations in µm
+    buff = (buff - buff(1))*10^6 ; % diameter variations in Âµm
     
     figure(1) 
     hold on
@@ -129,7 +147,7 @@ for i=1:length(dir_names)
     
 %     %% XYLEM diameter comparison
 %     buff = Dx(i).DDx ;
-%     buff = (buff - buff(1))*10^6 ; % diameter variations in µm
+%     buff = (buff - buff(1))*10^6 ; % diameter variations in Âµm
 %     figure(6) 
 %     hold on
 %     f1 = plot(th(i).th,buff,'Color',c(i,:),'Linewidth',1.5,'Linestyle',my_styles(i)) ;
@@ -244,7 +262,7 @@ set(lgnd(2),'Position',[0.46, 0.48, 0.3, 0.3])
 % h = axes('Parent',gcf,'Position',[0.45 0.45 0.38 0.38] ) ;
 % for i=1:length(dir_names)
 %     buff = D(i).D ;
-%     buff = (buff - buff(1))*10^6 ; % diameter variations in µm
+%     buff = (buff - buff(1))*10^6 ; % diameter variations in Âµm
 %     hold on
 %     plot(h, th(i).th,buff,'Color',c(i,:),'Linewidth',1.5) ;
 % end
