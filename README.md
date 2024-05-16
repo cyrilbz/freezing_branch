@@ -27,7 +27,7 @@ This file contains all the parameters of the model as well as many useful functi
 
 
 ## dyfun.m:
-This is the code that contains the model equations. It constructs the vector dy/dt, with y the vector of unknowns to be computed, using the parameters and previous (known) values of y.
+This is the code that contains the model equations. It constructs the vector dy/dt, with y the vector of unknowns to be computed, using the parameters and previous (known) values of y. For the equations have a look at https://doi.org/10.1093/treephys/tpad117
 
 ## main.m:
 This is the main code that runs the simulations.
