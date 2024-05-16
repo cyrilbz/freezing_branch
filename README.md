@@ -1,6 +1,6 @@
 # freezing_branch
 This MATLAB code simulates freeze induced cell dehydration, pressure and diameter changes in a tree stem.
-
+Here is the associated publication : https://doi.org/10.1093/treephys/tpad117
 
 The main directory contains different sub-directories that correspond to different simulations. \
 Each sub-directory contains three .m files: main.m, parameters.m and dyfun.m (see explanation below), as well as data in .mat format (e.g., pressure and temperature fields, ...) produced by the simulations. \
